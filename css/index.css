@@ -1,0 +1,109 @@
+:root{
+    --main-color:#adaaaa;
+}
+*{ 
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+}
+body > h1{
+    background-color: var(--main-color);
+    font-size: 32px;
+    text-align: center;
+    color: #373535;
+    margin-top: -18px;
+    height: 46px;
+    border: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: larger;
+}
+
+/* scoring part  */
+.score{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    color: white;
+}
+.score p{
+    border: 2px white solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 600;
+    width: 150px;
+}
+.score .round-text{
+    background-color: #834848;    
+    color: black;
+}
+/* main text */
+.main-text{
+    font-size: 26px;
+    width: 100%;
+    height: 5vh;
+    background-color: #373535;
+    color: white;
+}
+/* body container */
+.body-container{
+    display: flex;
+    flex-direction: row;
+}
+/* user side components */
+.user-side{
+    background-color: rgb(185, 184, 184);
+    width: 65vw;
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.user-side > h3 {
+    text-align: center;
+    font-size: 30px;
+} 
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.buttons-container img{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+.buttons-container :hover{
+    background-color: #adaaaa;
+}
+/* computer side  */
+.computer-side{
+    background-color: white;
+    width: 35vw;
+    height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* restart button */
+.restart{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 100px;
+    height: 45px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: #834848;
+}
+
